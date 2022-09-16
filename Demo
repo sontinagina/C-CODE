@@ -1,1 +1,15 @@
-nhhhhhhhhhhhhhhhhhhhhdfddddddddddddddddddzszzzzzzzzzzzzzzzzzzeeeeeeeeeeeeeeeerrrrrrrrrrrrrrrttttttttttttyyyyyyyyyyyuuuuuuuuuuuuuiiiiiiiiii
+#include <iostream>
+using namespace std;
+int main() {
+   int a;
+   int arr[10]={4,5,6,7,9,12,55,65,7,8};
+   cout<<arr[0]<<"\n";
+   cin >>a;
+   cout<<"Hello World! Aditi this side\n "<<a;
+   cout<<"\n";
+   int size=sizeof(arr)/sizeof(int);
+   cout<<size<<"\n";
+   for(int i=size-1;i>=0;i--){
+       cout<<arr[i]<<" ";
+   }
+}
