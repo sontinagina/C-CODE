@@ -40,3 +40,30 @@ int main() {
    cout<<min<<" "<<max<< " \n";
    cout<<"min value = "<<*min_element(arr,arr+size)<<"\n max value ="<< *max_element(arr,arr+size);
 }
+
+
+
+
+
+
+
+\\sortr array in ascending and descending order
+
+
+#include <iostream>
+#include <bits/stdc++.h>
+using namespace std;
+int main() {
+  int k=2;
+  int array[9]={2,4,5,6,7,8,3,1,9};
+  int n=sizeof(array)/sizeof(int);
+sort(array,array+n,greater<int>());
+for(int i=0;i<n;i++){
+cout<<array[i]<<" ";
+}
+cout<<"\n";
+sort(array,array+n);
+for(int i=0;i<n;i++){
+cout<<array[i]<<" ";
+}
+}
