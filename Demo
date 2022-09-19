@@ -67,3 +67,38 @@ for(int i=0;i<n;i++){
 cout<<array[i]<<" ";
 }
 }
+
+
+
+//move all negative elements one side and positive one side
+#include <iostream>
+using namespace std;
+int main() {
+    cout<<"Hello World!";
+    int arr[11]={1,-5,88,9,-1,-9,-33,-4,11,55,-10};
+     int n=sizeof(arr)/sizeof(int);
+     int low=0;
+     int high=n;
+     int temp;
+    while(low<high){
+       if(arr[low]<0){
+        low++;
+
+    }else if(arr[high]<0){
+
+     temp=arr[low];
+     arr[low]=arr[high];
+     arr[high]=temp;
+      high--;
+      low++;
+
+    }else{
+     high--;
+     
+   }
+ }
+ for(int j=0;j<n;j++){
+     cout<<" "<<arr[j];
+ }
+    return 0;
+}
